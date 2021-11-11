@@ -1,0 +1,5 @@
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let libro of libros">
+    <a routerLink="libro/{{libro.id}}">{{ libro.titulo }}</a>
+  </li>
+</ul>

@@ -1,0 +1,16 @@
+<h4>Detalle del libro</h4>
+<dl class="list-group-horizontal" *ngIf="libro">
+  <dt>Identificador: </dt><dd>{{ libro.id }}</dd>
+  <dt>Título: </dt><dd>{{ libro.titulo }}</dd>
+  <dt>Autor: </dt><dd>{{ libro.autor }}</dd>
+</dl>
+<ul class="list-group">
+  <li class="list-group-item"><h4>Información adicional</h4></li>
+  <li class="list-group-item">
+    <a routerLink="imagenes" routerLinkActive="active">Imágenes</a>
+  </li>
+  <li class="list-group-item">
+    <a routerLink="opiniones" routerLinkActive="active">Opiniones</a>
+  </li>
+</ul>
+<router-outlet></router-outlet>
